@@ -2,7 +2,7 @@
 
 This is a website I made for a class project. 
 This website is based on USA vs Japan.  
-Specifically the Xbox vs PlayStation console wars.
+Specifically the Xbox vs PlayStation console war.
 
 here is the link to the site :)
 

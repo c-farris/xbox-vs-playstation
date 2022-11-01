@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Console Wars :: Survey by Cheyenne Farris</title>
+<meta charset="utf-8">
+<meta name="author" content="Cheyenne Farris" >
+<meta name="description" content="Console Wars Survey" >
+<meta name="keywords" content="console wars, playstation, xbox, playstation and xbox, survey">
+<meta name= "viewpoint" content="width-device-width,initial-scale=1.0">
+<link rel="stylesheet" href="console-wars.css">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<!-- [if it IE 9] -->
+<script 
+	src="http://html5shim.googlecode.com/svn/trunk/html5.js"> 
+</script>
+<!-- [endif] -->
+
+<!-- ************* jQuery Validation ************* -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.js"></script> 
+	<script> 
+		$(document).ready(function(){ 
+		$('form').validate(); 
+		}); 
+	</script>
+</head>
+
+<body>
+
+<!-- ********** Wrapper ********** -->
+<div id="wrapper">
+
+<!-- ********** Header *********** -->
+<header>
+	<h1> USA vs Japan : Console Wars </h1>
+</header>
+
+<!-- ******* Navigiation ********* -->
+<nav>
+	<ul>
+		<li><a id="home" href="index.html"> Home </a></li>
+		<li><a class="usa" href="UsaMicrosoft.html"> Microsoft </a></li>
+		<li><a class="usa" href="UsaXbox.html"> Xbox </a></li>
+		<li><a class="japan" href="JapanSony.html"> Sony </a></li>
+		<li><a class="japan" href="JapanPlaystation.html"> PlayStation </a></li>
+		<li><a id ="survey" href="survey.html"> Survey </a></li>
+	</ul>
+</nav>
+       
+ <!-- ********* Main **************** -->
+ <main>
+	
+	<img src="images/homeHero.jpg" alt="Play Station & Xbox controllers">
+	
+   <div id="content">
+	 <h2> Survey </h2>
+	 <h5> Required information is marked with an asterisk (*). </h5>
+	 
+	 <form method="post" onsubmit="retun validateForm();" name="mySurvey" id="mySurvey" 
+	action="http://apollo1.occc.edu/genericFormHandler.php" >
+
+<!-- ****************** Name & Email ******************* -->	
+
+	<label for="myName"> *Name: </label>
+	<input type="text" id="myName" name="myName" tabindex="1" accesskey="N" class="required">
+	<br>
+	<label for="myEmail"> *Email: </label>
+	<input type="email" id="myEmail" name="myEmail" tabindex="2" accesskey="E" class="required email">
+	 
+<!-- ****************** CheckBox 1 ******************* --> 
+
+	<div id="xboxCheckbox">
+	<fieldset>
+		<legend> *How many Xbox consoles have you owned? </legend>
+	
+	<div>
+		<input type="checkbox" id="all" name="myConsoles" value="all" tabindex="3" accesskey="A" 
+		class="required checkbox" >
+		<label for="all"> All </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="none" name="myConsoles" value="none" tabindex="3" accesskey="B" 
+		class="required checkbox" >
+		<label for="none"> None </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="originalXbox" name="myConsoles" value="origianlXbox" tabindex="4" accesskey="C"
+		class="required checkbox" >
+		<label for="originalXbox"> Original Xbox </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="xbox360" name="myConsoles" value="xbox360" tabindex="5" accesskey="D"
+			class="required checkbox" >
+		<label for="xbox360"> Xbox 360 </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="xbox360S" name="myConsoles" value="xbox360S" tabindex="6" accesskey="F"
+		class="required checkbox"	>
+		<label for="xbox360S"> Xbox 360 S </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="xbox360E" name="myConsoles" value="xbox360E" tabindex="7" accesskey="G"
+       class="required checkbox" >
+	   <label for="xbox360E"> Xbox 360 E </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="kinectV1" name="myConsoles" value="kinectV1" tabindex="8" accesskey="H" 
+			class="required checkbox" >
+		<label for="kinectV1"> Kinect v1 </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="xboxOne" name="myConsoles" value="xboxOne" tabindex="9" accesskey="I" 
+		class="required checkbox" >
+		<label for="xboxOne"> Xbox One </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="xboxOneS" name="myConsoles" value="xboxOneS" tabindex="10" accesskey="J" 
+		class="required checkbox" >
+		<label for="xboxOneS"> Xbox One S </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="xboxOneSDigital" name="myConsoles" value="xboxOneSDigital" tabindex="11" 
+		accesskey="K"  class="required checkbox" >
+		<label for="xboxOneSDigital"> Xbox One S Digital </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="xboxOneX" name="myConsoles" value="xboxOneX" tabindex="12" accesskey="L" 
+		class="required checkbox" >
+		<label for="xboxOneX"> Xbox One X </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="kinectV2" name="myConsoles" value="kinectV2" tabindex="13" accesskey="M" 
+		class="required checkbox" >
+		<label for="kinectV2"> Kinect v2 </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="xboxSeriesS" name="myConsoles" value="xboxSeriesS" tabindex="14" accesskey="O" 
+		class="required checkbox" >
+		<label for="xboxSeriesS"> Xbox Series S </label>
+	</div>
+	<div> 
+		<input type="checkbox" id="xboxSeriesX" name="myConsoles" value="xboxSeriesX" tabindex="15" accesskey="P" 
+		class="required checkbox" >
+		<label for="xboxSeriesX"> Xbox Series X </label>
+	</div>
+    </fieldset>
+   </div> <!-- xboxCheckbox -->
+
+<!-- ****************** CheckBox 2 ******************* -->
+
+	<div id="playstationCheckbox">
+<fieldset>
+	<legend> *How many PlayStation consoles have you owned? </legend>
+		
+	<div>
+		<input type="checkbox" id="all2" name="myConsoles" value="all2" tabindex="16" accesskey="Q" 
+		class="required checkbox" >
+		<label for="all2"> All </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="none2" name="myConsoles" value="none2" tabindex="17" accesskey="T" 
+		class="required checkbox" >
+		<label for="none2"> None </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="playStationOriginal" name="myConsoles" value="playStationOriginal" tabindex="18" 
+		accesskey="U" class="required checkbox" >
+		<label for="playStationOriginal"> PlayStation </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="psOne" name="myConsoles" value="psOne" tabindex="19" accesskey="V" 
+		class="required checkbox" >
+		<label for="psOne"> PS One </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="playstationClassic" name="myConsoles" value="playstationClassic" tabindex="20" 
+		accesskey="W" class="required checkbox" >
+		<label for="playstationClassic"> PlayStation Classic </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="ps2" name="myConsoles" value="ps2" tabindex="21" accesskey="X" 
+		class="required checkbox" >
+		<label for="ps2"> PS2 </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="ps2Slim" name="myConsoles" value="ps2Slim" tabindex="22" accesskey="Y" 
+		class="required checkbox" >
+		<label for="ps2Slim"> PS2 Slim </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="psp" name="myConsoles" value="psp" tabindex="23" accesskey="Z" 
+		class="required checkbox" >
+		<label for="psp"> PSP </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="psVita" name="myConsoles" value="psVita" tabindex="24" accesskey="0" 
+		class="required checkbox" >
+		<label for="psVita"> PS Vita </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="ps3" name="myConsoles" value="ps3" tabindex="25" 
+		accesskey="1" class="required checkbox" >
+		<label for="ps3"> PS3 </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="ps3Slim" name="myConsoles" value="ps3Slim" tabindex="26" accesskey="2" 
+		class="required checkbox" >
+		<label for="ps3Slim"> PS3 Slim </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="ps3SuperSlim" name="myConsoles" value="ps3SuperSlim" tabindex="27" accesskey="3" 
+		class="required checkbox" >
+		<label for="ps3SuperSlim"> PS3 Super Slim </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="ps4" name="myConsoles" value="ps4" tabindex="28" accesskey="4" 
+		class="required checkbox" >
+		<label for="ps4"> PS4 </label>
+	</div>
+	<div>	
+		<input type="checkbox" id="ps4Slim" name="myConsoles" value="ps4Slim" tabindex="29" accesskey="5" 
+		class="required checkbox" >
+		<label for="ps4Slim"> PS4 Slim </label>
+	</div>
+	<div> 
+		<input type="checkbox" id="ps4Pro" name="myConsoles" value="ps4Pro" tabindex="30" accesskey="6" 
+		class="required checkbox" >
+		<label for="ps4Pro"> PS4 Pro </label>
+	</div>
+	<div> 
+		<input type="checkbox" id="ps5" name="myConsoles" value="ps5" tabindex="31" accesskey="7" 
+		class="required checkbox" >
+		<label for="ps5"> PS5 </label>
+	</div>
+	<div> 
+		<input type="checkbox" id="ps5Digital" name="myConsoles" value="ps5Digital" tabindex="32" accesskey="8" 
+		class="required checkbox" >
+		<label for="ps5Digital"> PS5 Digital </label>
+	</div>
+	</fieldset>
+   </div> <!-- psCheckbox -->
+ 
+ <!-- ******************** Radio Buttons ************ -->
+ 
+<fieldset>
+		<legend> *What side are you on? </legend>
+	<div>
+		<input type="radio" id="xboxSide" name="side" value="xboxSide" class="required radio">
+		<label for="xboxSide" > Xbox </label>
+	</div>
+	<div>
+		<input type="radio" id="psSide" name="side" value="psSide" class="required radio">
+		<label for="psSide"> PlayStation </label>
+	</div>
+</fieldset>
+
+<br><br>
+<!-- ****************** Select List ******************* -->
+
+	<label for="favConsole"> *What is your favorite console? </label>
+	<select name="favConsole" id="favConsole">
+		<option value="favAll"> I can't choose just one favorite! </option>
+	<optgroup label="Xbox">
+		<option value="origianlXbox"> Original Xbox</option> 
+		<option value="xbox360"> Xbox 360 </option>
+		<option value="xbox360S"> Xbox 360 S </option>
+		<option value="xbox360E"> Xbox 360 E </option>
+		<option value="xboxOne"> Xbox One </option>
+		<option value="xboxOneS"> Xbox One S </option>
+		<option value="xboxOneSDigital"> Xbox One S Digital </option>
+		<option value="xboxOneX"> Xbox One X </option>
+		<option value="xboxSeriesS"> Xbox Series S </option>
+		<option value="xboxSeriesX"> Xbox Series X </option>
+	</optgroup>
+	<optgroup label="PlayStation">
+		<option value="playStation"> PlayStation </option> 
+		<option value="psOne"> PS One </option> 
+		<option value="ps2"> PS2 </option> 
+		<option value="ps2Slim"> PS2 Slim </option> 
+		<option value="psp"> PSP </option> 
+		<option value="psVita"> PS Vita </option> 
+		<option value="ps3"> PS3 </option> 
+		<option value="ps3Slim"> PS3 Slim </option> 
+		<option value="ps3SuperSlim"> PS3 Super Slim </option> 
+		<option value="ps4"> PS4 </option> 
+		<option value="ps4Slim"> PS4 Slim </option> 
+		<option value="ps4Pro"> PS4 Pro </option> 
+		<option value="ps5"> PS5 </option>
+		<option value="ps5Digital"> PS5 Digital </option> 	
+	</optgroup>		
+	</select>
+
+<br><br>
+<!-- ********* Sumbit & Reset ********** -->
+	<input type="submit" id="mySubmit" name="mySubmit" tabindex="33" accesskey="9"
+	class="printHidden" value="Submit Form" >
+	
+	<input type="reset" id="myReset" name="myReset" tabindex="34" accesskey="." class="printHidden" 
+	value="Clear Form" >
+	
+</form>
+</div> <!-- Content -->
+</main>
+<!-- ********* Footer ************** -->
+<footer>
+	
+	<div id="navBottom">
+		<a href="index.html"> Home</a> &nbsp;
+		<a href="UsaMicrosoft.html"> Microsoft</a> &nbsp;
+		<a href="UsaXbox.html"> Xbox</a> &nbsp;
+		<a href="JapanSony.html"> Sony</a> &nbsp;
+		<a href="JapanPlaystation.html"> Play Station</a> &nbsp;
+		<a href="survey.html">Survey</a> <br>
+	</div>
+		
+		<br>
+		
+		<a href= "mailto:cheyenne@farris"> cheyenne@farris.com </a>
+	
+		<script>
+			document.write("<p> This document was last modified on: ");
+			document.write(document.lastModified);
+			document.write("</p>");
+		</script>
+		
+		<i>Disclaimer: Oklahoma City Community College does not necessarily endorse the content or 
+		the respective links of this web page</i>
+		
+</footer>
+</div> <!-- Wrapper -->
+</body>
+</html>
